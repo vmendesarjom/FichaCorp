@@ -1,0 +1,66 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<section id="banner">
+        <div class="inner">
+            <header>
+                <h3>Assistente de Ficha</h3>
+            </header>
+
+    <form method="post" id="form1" name="form1">
+    
+        <div class="field half first">
+            <label style="color: white;" for="classe">Nome do Personagem</label>
+            <input name="nome" id="nome" type="text" placeholder="Nome">
+        </div>
+
+        <div class="field half">
+            <label style="color: white;" for="classe">Classe</label>
+            <input name="classe" id="classe" type="text" placeholder="Classe">
+        </div>
+
+        <div class="field half first">
+            <label style="color: white;" for="raca">Raça</label>
+            <input name="raca" id="raca" type="text" placeholder="Raça">
+        </div>
+
+        <div class="field half">
+            <label style="color: white;" for="equipamento">Equipamento</label>
+            <input name="equipamento" id="equipamento" type="text" placeholder="Equipamento">
+        </div>
+
+        <div class="box-footer">
+            <button type="submit" class="button alt">Enviar</button>
+        </div>
+
+    </form>
+    <script type='text/javascript'>
+        function valida_form(){
+            if(document.getElementById("nome").value.length < 1){
+                alert('Por favor preencha os campos restantes');
+                document.getElementById("nome").focus();
+                return false;
+            }
+            if(document.getElementById("classe").value.length < 1){
+                alert('Por favor preencha os campos restantes');
+                document.getElementById("classe").focus();
+                return false;
+            }
+            if(document.getElementById("raca").value.length < 1){
+                alert('Por favor preencha os campos restantes');
+                document.getElementById("raca").focus();
+                return false;
+            }
+            if(document.getElementById("equipamento").value.length < 1){
+                alert('Por favor preencha os campos restantes');
+                document.getElementById("equipamento").focus();
+                return false;
+            }
+            return false
+        }    
+        document.getElementById("form1").onsubmit=valida_form
+    </script>
+</div>
+</section>
+{% endblock %}

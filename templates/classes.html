@@ -1,0 +1,138 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<section id="banner">
+        <div class="inner">
+            <header>
+                <h3>Classes</h3>
+            </header>
+    
+        
+            <h2 style="color: white;">Bárbaro</h2>
+
+            <img src="{% static 'images/Barbaro.jpg' %}" alt="Bárbaro com espada" width="30%" height="500px">        
+        <div class="flex" style="color: white;">
+            <table cellpadding="3" style="position:relative; top: 10px;" >
+            <thead>
+                    <th style="color: white;">Nível</th>
+                    <th style="color: white;">Bônus Base de Ataque(BBA)</th>
+                    <th style="color: white;">Habilidades de Classe</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td>+1</td>
+                    <td>Analfabetismo, Fúria 1/dia, Movimento Rápido</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td> +2</td>
+                    <td>Esquiva Sobrenatural</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td> +3</td>
+                    <td>Instinto Selvagem +1</td>
+                </tr>
+                <tr>
+                    <td>4º</td>
+                    <td> +4</td>
+                    <td>Fúria 2/dia</td>
+                </tr>
+                <tr>
+                    <td>5º</td>
+                    <td> +5</td>
+                    <td>Esquiva Sobrenatural Aprimorada</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+    <h2 style="color: white;">Feiticeiro</h2>
+    <img src="{% static 'images/Feiticeiro.jpg' %}" alt="Bárbaro com espada" width="30%" height="500px">
+    <div class="flex" style="color: white;">    
+    <table class="table table-striped">
+        <thead>
+                <th style="color: white;">Nível</th>
+                <th style="color: white;">Bônus Base de Ataque(BBA)</th>
+                <th style="color: white;">Habilidades de Classe</th>
+                <th style="color: white;">Magias</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1º</td>
+                <td>+0</td>
+                <td>Linhagem Sobrenatural</td>
+                <td>0,1º</td>
+            </tr>
+            <tr>
+                <td>2º</td>
+                <td> +1</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3º</td>
+                <td> +1</td>
+                <td></td>
+                <td>2º</td>
+            </tr>
+            <tr>
+                <td>4º</td>
+                <td> +2</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5º</td>
+                <td> +2</td>
+                <td>Linhagem Sobrenatural</td>
+                <td>3º</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <h2 style="color: white;">Swashbuckler</h2>
+    <img src="{% static 'images/Swashbuckler.jpg' %}" alt="Bárbaro com espada" width="30%" height="500px">
+    <div class="flex" style="color: white;">
+        <table cellpadding="3" style="position:relative; top: 10px;" >
+            <thead>
+                    <th style="color: white;">Nível</th>
+                    <th style="color: white;">Bônus Base de Ataque(BBA)</th>
+                    <th style="color: white;">Habilidades de Classe</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td>+1</td>
+                    <td>Autoconfiança, Técnica de Luta</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td> +2</td>
+                    <td>Estilo de Combate, Evasão, Técnica de Luta</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td> +3</td>
+                    <td>Presença Paralisante</td>
+                </tr>
+                <tr>
+                    <td>4º</td>
+                    <td> +4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5º</td>
+                    <td> +5</td>
+                    <td>Bônus na CA +1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</section>
+{% endblock %}
